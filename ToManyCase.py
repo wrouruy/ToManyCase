@@ -8,14 +8,14 @@ class ToManyCase:
         return '-'.join(word.lower() for word in words)
 
     @staticmethod
-    def camelCase(string):
+    def camel_case(string):
         words = string.split()
         if not words:
             return ''
         return words[0].lower() + ''.join(word.capitalize() for word in words[1:])
     
     @staticmethod
-    def PascalCase(string):
+    def pascal_case(string):
         return ''.join(word.capitalize() for word in string.split())
     
     @staticmethod
